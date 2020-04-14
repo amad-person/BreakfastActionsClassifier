@@ -1,4 +1,4 @@
-# CS5242 Project
+# CS5242 Project: Breakfast Actions Classifier
 
 ## Results
 
