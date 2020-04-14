@@ -1,4 +1,4 @@
-# Breakfast Actions Classifier Data
+# Breakfast Actions Classification (PyTorch Code)
 
 This folder contains the following:
 
@@ -10,3 +10,11 @@ This folder contains the following:
 - `dataset_generator.py`: Processes the `.gz` data files and creates the training, validation and test data in the format used by the models in the Jupyter notebooks.
 - `A2_bigru_video_model.ipynb`: A Bidirectional GRU model that uses entire videos and segment indices for predicting segment labels.
 - `A3_stacked_bigru_video_model.ipynb`: A stacked Bidirectional GRU model that uses entire videos and segment indices for predicting segment labels.
+
+## Usage
+
+Run the following command for data processing, and then use the Jupyter notebooks for training the models.
+
+```sh
+python3 dataset_generator.py
+```
