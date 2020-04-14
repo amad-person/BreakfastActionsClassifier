@@ -14,7 +14,7 @@ The data given to us is stored in the `./breakfast-actions-classifier-data` dire
 
 ## Usage
 
-## Setting up
+### Setting up
 
 Main dependencies:
 
