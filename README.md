@@ -18,6 +18,7 @@
 - The `pytorch` folder contains the code for the best GRU model.
 
 ```sh
+.
 ├── README.md
 ├── keras
 │   ├── README.md
@@ -51,7 +52,9 @@
 │   ├── lstm_segment.py
 │   ├── requirements.txt
 │   ├── results
-|   │   └── dnn_frame_test_predictions.csv
+│   │   ├── A1_lstm_segment_test_predictions.csv
+│   │   ├── B1_dnn_frame_test_predictions.csv
+│   │   └── B2_lstm_frame_test_predictions.csv
 │   ├── runs
 │   │   ├── figures
 │   │   └── history
