@@ -20,7 +20,7 @@ Main dependencies:
 
 - Python 3.5.2
 - Keras: `Keras==2.2.4`
-- Tensorflow: `tensorflow==1.12.0`, tensorflow-gpu==1.12.0
+- Tensorflow: `tensorflow==1.12.0`, `tensorflow-gpu==1.12.0`
 - Numpy: `numpy==1.16.3`
 
 The `requirements.txt` file is provided for convenience. Create a virtual environment and install the dependencies.
