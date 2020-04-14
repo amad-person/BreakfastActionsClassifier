@@ -7,15 +7,19 @@
 | Segment To Label      |               |                       |
 | A1. BiLSTM            |    49.610%    | Segment as input      |
 | A2. BiGRU             |    64.797%    | Entire video as input |
-| A3. Multi-level BiGRU |    **70.482%**    | Entire video as input |
+| A3. Stacked BiGRU |    **70.482%**    | Entire video as input |
 | Frame to Label        |               |                       |
 | B1. DNN               |    23.286%    | Entire video as input |
 | B2. BiLSTM            |    **52.803%**    | Entire video as input |
 
 ## Code
 
-- The `keras` folder contains the code the baseline DNN and frame/segment to label LSTM models.
-- The `pytorch` folder contains the code for the best GRU model.
+The `best` folder contains the Jupyter notebook with the code and results of our best performing model, A3. Stacked BiGRU. The model alone is shown in 
+`best_model(A3_stacked_bigru).py`.
+
+For reference, we also provide the other models discussed in our report.
+- The `keras` folder contains the code the baseline DNN and frame/segment to label LSTM models (B1., B2., A1.).
+- The `pytorch` folder contains the Jupyter notebooks with the code for the GRU models (A2. and A3.), and the python script used for dataset generation.
 
 ```sh
 .
