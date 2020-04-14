@@ -1,5 +1,19 @@
 # CS5242 Project
 
+## Results
+
+|                       | Test Accuracy | Notes                 |
+|-----------------------|---------------|-----------------------|
+| Segment To Label      |               |                       |
+| A1. BiLSTM            |    49.610%    | Segment as input      |
+| A2. BiGRU             |    64.797%    | Entire video as input |
+| A3. Multi-level BiGRU |    **70.015%**    | Entire video as input |
+| Frame to Label        |               |                       |
+| B1. DNN               |    23.286%    | Entire video as input |
+| B2. BiLSTM            |    **52.803%**    | Entire video as input |
+
+## Code
+
 - The `keras` folder contains the code the baseline DNN and frame/segment to label LSTM models.
 - The `pytorch` folder contains the code for the best GRU model.
 
