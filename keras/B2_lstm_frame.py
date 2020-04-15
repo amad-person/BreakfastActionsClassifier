@@ -7,9 +7,9 @@ import pickle
 import matplotlib.pyplot as plt
 from keras import optimizers
 from keras import regularizers
-from keras.layers import Dense, Dropout, BatchNormalization, Activation
+from keras.layers import Dense, Dropout, BatchNormalization, Activation, Bidirectional, LSTM
 from keras.models import Sequential
-from keras.callbacks import ModelCheckpoint
+from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau
 
 from dataset_generator_frame import BreakfastActionTrainDataGenerator, BreakfastActionTestDataGenerator
 from utils import read_dict
@@ -72,7 +72,7 @@ reducelr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=3, min_lr=
 callback_list = [checkpoint, reducelr]
 
 # Compile model
-model.compile(adagrad, loss='categorical_crossentropy', metrics=['categorical_accuracy'])
+model.compile('adagrad', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
 model.summary()
 
 # Load indices for training, testing, and validation

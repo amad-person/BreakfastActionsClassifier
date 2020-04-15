@@ -29,9 +29,9 @@ For reference, we also provide the other models discussed in our report.
 │   ├── A3_stacked_bigru_video_model.pth
 │   └── best_model(A3_stacked_bigru).py
 ├── keras
-│   ├── A1_lstm_frame.py
+│   ├── A1_lstm_segment.py
 │   ├── B1_dnn_frame.py
-│   ├── B2_lstm_segment.py
+│   ├── B2_lstm_frame.py
 │   ├── README.md
 │   ├── breakfast-actions-classifier-data
 │   │   ├── README.md
@@ -66,7 +66,7 @@ For reference, we also provide the other models discussed in our report.
 │   ├── runs
 │   │   ├── A1_lstm_segment.hdf5
 │   │   ├── B1_dnn_frame.hdf5
-│   │   ├── B2_lstm_segment.hdf5
+│   │   ├── B2_lstm_frame.hdf5
 │   │   ├── figures
 │   │   └── history
 │   ├── test_frame_model.py
